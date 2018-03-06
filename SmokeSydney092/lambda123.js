@@ -9,7 +9,8 @@ exports.handler = function (event, context, callback) {
 	ddb.put({
 		TableName: 'Test',
 		Item: {
-			'key': 'value'
+			'key': 'value',
+			'sample': 'test'
 		}
 	}, function (err, data) {
 		if (err) {
